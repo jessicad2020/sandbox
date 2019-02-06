@@ -39,13 +39,37 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Photo grid -->
   <div class="w3-row">
     <div class="w3-third">
-      <img src="tribute-pic.png" style="width:100%" onclick="onClick(this)" alt="A tribute to Queen Elizabeth II. This first project was to honour someone who has done something good for this world."
+      <img src="tribute-pic.png" style="width:100%" onclick="document.getElementById('modalTribute').style.display='block'" alt="A tribute to Queen Elizabeth II. This first project was to honour someone who has done something good for this world."
            <br>
            <div class="w3-container">
       <h3>Tribute Page</h3>
       <p>A tribute to Queen Elizabeth II. Click image for more information about this project.  Visit the tribute page <a href="https://jessicad2020.github.io/tribute/">here</a>.</p>
       </div>
     </div>
+    
+    <!-- Modal Tribute -->
+<div class="w3-modal" id="modalTribute">  
+<div class="w3-modal-content w3-light-grey w3-card-4">
+		  <header class="w3-container" > 
+			<span onclick="document.getElementById('modalTribute').style.display='none'" 
+		  class="w3-button w3-display-topright">&times;</span>
+			<h2>Tribute Page</h2>
+		  </header>
+		  <div class="w3-container">
+			<div class="w3-row">
+			  <div class="w3-col s8 w3-white w3-padding">
+			  <p>Paragraph </p>
+			</div>
+			</div>
+		  </div>
+		  <footer class="w3-container ">
+			<p> </p>
+		  </footer>
+		</div>
+	  </div>
+ 
+    
+    
     <div class="w3-third">
       <img src="peppers-pic.JPG" style="width:100%" onclick="onClick(this)" alt="Digital Photography">
       <br>
