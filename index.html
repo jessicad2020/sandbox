@@ -38,12 +38,13 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   
   <!-- Photo grid -->
   <div class="w3-row">
+  <!--Tribute Page-->
     <div class="w3-third">
-      <img src="tribute-pic.png" style="width:100%" onclick="document.getElementById('modalTribute').style.display='block'" alt="A tribute to Queen Elizabeth II. This first project was to honour someone who has done something good for this world."
+      <img src="tribute-pic.png" style="width:100%" onclick="document.getElementById('modalTribute').style.display='block'" alt="Tribute Page">
            <br>
            <div class="w3-container">
       <h3>Tribute Page</h3>
-      <p>A tribute to Queen Elizabeth II. Click image for more information about this project.  Visit the tribute page <a href="https://jessicad2020.github.io/tribute/">here</a>.</p>
+      <p>A tribute to Queen Elizabeth II. Click image for more information about this project.</p>
       </div>
     </div>
     
@@ -58,26 +59,54 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		  <div class="w3-container">
 			<div class="w3-row">
 			  <div class="w3-col s8 w3-white w3-padding">
-			  <p>Paragraph </p>
+			  <p>In this first HTML and CSS project, we made a website to honour a person who has done something good for this world. For my project, I made a tribute to Queen Elizabeth II. Please visit my Tribute to Queen Elizabeth II <a href="https://jessicad2020.github.io/tribute/">here</a>.</p>
 			</div>
+			<div class="w3-col s4  w3-center w3-container">
+			  <img src="tribute-pic.png" alt="Tribute Page" style="width:100%" />
+			  </div>
 			</div>
 		  </div>
 		  <footer class="w3-container ">
 			<p> </p>
 		  </footer>
 		</div>
-	  </div>
- 
-    
-    
+	  </div> 
+	    
+    <!--  Digital Photography  -->
     <div class="w3-third">
-      <img src="peppers-pic.JPG" style="width:100%" onclick="onClick(this)" alt="Digital Photography">
+      <img src="peppers-pic.JPG" style="width:100%" alt="Digital Photography" onclick="document.getElementById('modalDigitalPhoto').style.display='block'">
       <br>
       <div class="w3-container">
       <h3>Digital Photography</h3>
       <p>Welcome to my photography portfolio! Here you will find 10 pictures that I took in Bedford, in the Annapolis Valley, and in Italy.</p>
       </div>
     </div>
+    
+    <!--Digital Photography Modal-->
+    <div class="w3-modal" id="modalDigitalPhoto">  
+<div class="w3-modal-content w3-light-grey w3-card-4">
+		  <header class="w3-container"> 
+			<span onclick="document.getElementById('modalDigitalPhoto').style.display='none'" 
+		  class="w3-button w3-display-topright">&times;</span>
+			<h2>Digital Photography</h2>
+		  </header>
+		  <div class="w3-container">
+			<div class="w3-row">
+			  <div class="w3-col s8 w3-white w3-padding">
+			  <p>Paragraph.</p>
+			</div>
+			<div class="w3-col s4  w3-center w3-container">
+			  <img src="peppers-pic.JPG" alt="Tribute Page" style="width:100%" />
+			  </div>
+			</div>
+		  </div>
+		  <footer class="w3-container">
+			<p> </p>
+		  </footer>
+		</div>
+	  </div>
+    
+    <!-- Coin Trap--> 
     <div class="w3-third">
       <img src="trap-pic.png" style="width:100%" onclick="onClick(this)" alt="Coin Trap">
       <br>
