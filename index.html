@@ -149,7 +149,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		  <div class="w3-container">
 			<div class="w3-row">
 			  <div class="w3-col s8 w3-white w3-padding">
-			  <p>Download the Coin Trap file <a href="https://github.com/jessicad2020/scad/blob/master/coin_trap_01.scad" download>here</a>.</p>
+			  <p>This Coin Trap project was part of the 3D design unit and was made using openSCAD. Download the Coin Trap file <a href="coin_trap_01.scad" download="CoinTrap">here</a>.</p>
 			</div>
 			<div class="w3-col s4  w3-center w3-container">
 			  <img src="trap-pic.png" alt="openSCAD Coin Trap" style="width:100%" />
@@ -166,13 +166,38 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-row">
     <div class="w3-third">
-      <img src="portfolio-pic.png" style="width:100%" onclick="onClick(this)" alt="Digital Portfolio">
+      <img src="portfolio-pic.png" style="width:100%" onclick="document.getElementById('modalPortfolio').style.display='block'" alt="Digital Portfolio">
       <br>
       <div class="w3-container">
       <h3>Digital Portfolio</h3>
       <p>Welcome to my digital portfolio! Wait, you are already on my portfolio. That's odd...</p>
       </div>
     </div>
+    
+    <!-- Modal Digital Portfolio -->
+    <div class="w3-modal" id="modalPortfolio">  
+<div class="w3-modal-content w3-light-grey w3-card-4">
+		  <header class="w3-container" > 
+			<span onclick="document.getElementById('modalPortfolio').style.display='none'" 
+		  class="w3-button w3-display-topright">&times;</span>
+			<h2>Digital Portfolio</h2>
+		  </header>
+		  <div class="w3-container">
+			<div class="w3-row">
+			  <div class="w3-col s8 w3-white w3-padding">
+			  <p>Welcome to my Digital Portfolio!  <a href="coin_trap_01.scad" download="CoinTrap">here</a>.</p>
+			</div>
+			<div class="w3-col s4  w3-center w3-container">
+			  <img src="portfolio-pic.png" alt="Digital Portfolio" style="width:100%" />
+			  </div>
+			</div>
+		  </div>
+		  <footer class="w3-container ">
+			<p> </p>
+		  </footer>
+		</div>
+	  </div> 
+    
     <div class="w3-third">
       <img src="https://www.w3schools.com/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
     </div>
@@ -302,6 +327,19 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
+}
+
+//get the modal
+var modals = ['modalTribute', 'modalDigitalPhoto', 'modalTrap', 'modalPortfolio'];
+
+//when user clicks outside of modal, close it
+window.onclick = function(event) {
+	for (var i = 0; i<modals.length; i++) {
+		var modal = document.getElementById(modals[i]);
+		if (event.target == modal){
+			modal.style.display = "none";
+		}
+	}
 }
 
 </script>
